@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fitness users</title>
+</head>
+<body>
+    <h1>Lista e userave te fitnesit</h1>
+    <table>
+        <tr>
+            <td th:text="${fitnessUser.name}"></td>
+            <td th:text="${fitnessUser.lastName}"></td>
+            <td th:text="${fitnessUser.age}"></td>
+            <td th:text="${fitnessUser.gjinia}"></td>
+            <td>
+                <button>Delete this user</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

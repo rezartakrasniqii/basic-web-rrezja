@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Add new user</title>
+</head>
+<body>
+<form th:action="${'/new-employee'}" th:object="${employee}" method="post">
+    <label>ID:</label>
+    <input type="number" th:field="${employee.id}" style="background-color: #eee"/>
+    <label>First Name:</label>
+    <input type="text" th:field="${employee.firstName}" style="background-color: #eee"/>
+    <label>Last Name:</label>
+    <input type="text" th:field="${employee.lastName}" style="background-color: #eee"/>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
